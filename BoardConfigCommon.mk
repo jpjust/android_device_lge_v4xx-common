@@ -59,6 +59,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
+TARGET_BT_VENDOR_VARIANT := caf
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -132,7 +133,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_USE_SDCLANG := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/lge/v4xx-common/sepolicy
 
 # Time services
